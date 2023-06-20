@@ -33,7 +33,7 @@ public class Google_StepDefinitions {
 
     @When("user enters {string} in the Google search box")
     public void userEntersInTheGoogleSearchBox(String searchKey) {
-        log.info("filling the search box");
+        log.info("filling the search box ");
         googleSearchPage.searchBox.sendKeys(searchKey);
         BrowserUtils.sleep(1);
     }
